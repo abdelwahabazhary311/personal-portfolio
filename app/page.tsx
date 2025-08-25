@@ -80,7 +80,9 @@ export default function HomePage() {
                   <h1 className="text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                     Abdelwahab Azhary
                   </h1>
-                  <p className="text-xl text-slate-600 dark:text-slate-300 mb-2">Senior React Frontend Developer</p>
+                  <p className="text-xl text-slate-600 dark:text-slate-300 mb-2">
+                    Senior React Frontend Developer
+                  </p>
                   <p className="text-lg text-slate-500 dark:text-slate-400 max-w-xl leading-relaxed">
                     Passionate Frontend Developer specializing in React & Next.js, creating exceptional user experiences
                     and interactive web applications with modern technologies.
@@ -134,50 +136,41 @@ export default function HomePage() {
 
             <ScrollReveal direction="right" duration={800} delay={200}>
               <div className="relative group">
-                {/* Background Gradient */}
                 <div className="absolute -inset-4 bg-gradient-to-r from-blue-600/30 via-purple-600/30 to-pink-600/30 rounded-3xl blur-2xl opacity-75 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-                {/* Main Image Container */}
                 <div className="relative group w-fit mx-auto">
-            {/* إطار خارجي بلون متدرج خلف الصورة */}
-                 <div className="absolute -inset-4 bg-gradient-to-r from-blue-600/30 via-purple-600/30 to-pink-600/30 rounded-3xl blur-2xl opacity-60 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="absolute -inset-4 bg-gradient-to-r from-blue-600/30 via-purple-600/30 to-pink-600/30 rounded-3xl blur-2xl opacity-60 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-            {/* الصورة نفسها */}
-                 <div className="relative overflow-hidden rounded-2xl border-4 border-white dark:border-slate-700 shadow-2xl group-hover:shadow-3xl transition-all duration-500 group-hover:scale-105">
-                   <img
-                     src="/images/photo1-casual.png"
-                     alt="Abdelwahab Azhary"
-                     className="w-[280px] h-auto object-cover group-hover:scale-110 transition-transform duration-700"
-                   />
-              {/* Overlay عند الـ hover */}
-                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              </div>
+                  <div className="relative overflow-hidden rounded-2xl border-4 border-white dark:border-slate-700 shadow-2xl group-hover:shadow-3xl transition-all duration-500 group-hover:scale-105">
+                    <img
+                      src="/images/photo1-casual.png"
+                      alt="Abdelwahab Azhary"
+                      className="w-[280px] h-auto object-cover group-hover:scale-110 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  </div>
 
-          {/* دوائر عائمة للتزيين */}
-          <div className="absolute -top-3 -right-3 w-6 h-6 bg-blue-500 rounded-full animate-bounce opacity-80"></div>
-          <div className="absolute -bottom-3 -left-3 w-4 h-4 bg-purple-500 rounded-full animate-pulse opacity-80"></div>
+                  <div className="absolute -top-3 -right-3 w-6 h-6 bg-blue-500 rounded-full animate-bounce opacity-80"></div>
+                  <div className="absolute -bottom-3 -left-3 w-4 h-4 bg-purple-500 rounded-full animate-pulse opacity-80"></div>
 
-          {/* Badge "React" أعلى اليسار */}
-          <div className="absolute -top-2 left-4 opacity-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:translate-y-2">
-            <Badge
-              variant="secondary"
-              className="text-xs bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200"
-            >
-              React
-            </Badge>
-  </div>
+                  <div className="absolute -top-2 left-4 opacity-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:translate-y-2">
+                    <Badge
+                      variant="secondary"
+                      className="text-xs bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200"
+                    >
+                      React
+                    </Badge>
+                  </div>
 
-  {/* Badge "Next.js" أسفل اليمين */}
-  <div className="absolute -bottom-2 right-4 opacity-0 group-hover:opacity-100 transition-all duration-700 transform group-hover:-translate-y-2">
-    <Badge
-      variant="secondary"
-      className="text-xs bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200"
-    >
-      Next.js
-    </Badge>
-  </div>
-</div>
-
+                  <div className="absolute -bottom-2 right-4 opacity-0 group-hover:opacity-100 transition-all duration-700 transform group-hover:-translate-y-2">
+                    <Badge
+                      variant="secondary"
+                      className="text-xs bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200"
+                    >
+                      Next.js
+                    </Badge>
+                  </div>
+                </div>
               </div>
             </ScrollReveal>
           </div>
@@ -238,6 +231,44 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Certificates Section */}
+      <section className="py-16 px-4 bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
+  <div className="container mx-auto">
+    <ScrollReveal direction="up" duration={600}>
+      <div className="text-center mb-12">
+        <h2 className="text-3xl font-bold mb-4 text-slate-900 dark:text-slate-100">
+          Certificates & Achievements
+        </h2>
+        <p className="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
+          Some of the certifications I’ve earned along my journey
+        </p>
+      </div>
+    </ScrollReveal>
+
+    <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+      {[
+        "/images/IMG_3634.jpeg",
+        "/images/IMG_3635.jpeg",
+        "/images/IMG_3637.jpeg",
+      ].map((src, index) => (
+        <ScrollReveal key={index} direction="up" delay={index * 100} duration={600}>
+          <div className="group relative overflow-hidden rounded-xl shadow-lg border border-slate-200 dark:border-slate-700 hover:scale-105 transition-transform duration-300">
+            <img
+              src={src}
+              alt={`Certificate ${index + 1}`}
+              className="w-full h-72 sm:h-80 md:h-96 object-contain bg-white dark:bg-slate-800 p-2 transition-transform duration-300"
+            />
+            <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <span className="text-white font-semibold text-sm">View Certificate</span>
+            </div>
+          </div>
+        </ScrollReveal>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Recent Technologies */}
       <section className="py-16 px-4 bg-white dark:bg-slate-800">
